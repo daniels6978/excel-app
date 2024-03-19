@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/excel-app/static/css/main.0d5779ac.css",
+    "main.js": "/excel-app/static/js/main.b9dc2802.js",
+    "index.html": "/excel-app/index.html",
+    "main.0d5779ac.css.map": "/excel-app/static/css/main.0d5779ac.css.map",
+    "main.b9dc2802.js.map": "/excel-app/static/js/main.b9dc2802.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d5779ac.css",
+    "static/js/main.b9dc2802.js"
+  ]
+}
