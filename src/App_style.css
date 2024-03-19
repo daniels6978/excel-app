@@ -1,0 +1,57 @@
+.App {
+  padding: 100px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  border-bottom: 1px solid black;
+}
+
+.row:hover {
+  background-color: aqua;
+}
+
+.tuple {
+  width: 400px;
+  /* height: 40px; */
+  padding: 20px;
+}
+.counter {
+  width: 10px;
+}
+
+.asin {
+  width: 100px;
+}
+.productId {
+  width: 100px;
+}
+
+.kod {
+  width: 100px;
+}
+
+.link {
+  width: 100px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.setData {
+  padding: 10px 20px;
+  margin-left: 50px;
+}
+
+.white {
+  background-color: white;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
