@@ -115,8 +115,12 @@ function App() {
       />
       {fileName && (
         <>
-          <button onClick={handleRemove}>Delete</button>
-          <button onClick={handleExport}>Export</button>
+          <button className="funButton" onClick={handleRemove}>
+            Delete
+          </button>
+          <button className="funButton" onClick={handleExport}>
+            Export
+          </button>
         </>
       )}
 

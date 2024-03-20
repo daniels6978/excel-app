@@ -10,12 +10,23 @@
 }
 
 .row:hover {
-  background-color: aqua;
+  background-color: rgb(233, 232, 232);
+}
+
+button {
+  border: none;
+  border-radius: 25px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgb(156, 156, 222);
 }
 
 .tuple {
   width: 400px;
-  /* height: 40px; */
   padding: 20px;
 }
 .counter {
@@ -36,7 +47,6 @@
 .link {
   width: 100px;
   padding: 10px;
-  cursor: pointer;
 }
 
 .setData {
@@ -49,9 +59,14 @@
 }
 
 .red {
-  background-color: red;
+  background-color: rgb(207, 59, 59);
 }
 
 .green {
-  background-color: green;
+  background-color: rgb(55, 205, 55);
+}
+
+.funButton {
+  margin: 10px;
+  padding: 10px 20px;
 }
