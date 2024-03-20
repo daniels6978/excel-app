@@ -30,18 +30,18 @@ function Card(props) {
   };
 
   const setFinalData = () => {
-    if (data[licznik][8] === "tak") {
-      setData((data[licznik][8] = "nie"));
-      setchangeData((data[licznik][8] = "nie"));
-      console.log("nie");
-    } else if (data[licznik][8] === "nie") {
-      setData((data[licznik][8] = "tak"));
-      setchangeData((data[licznik][8] = "tak"));
-      console.log("tak");
+    if (data[licznik][8] === "OK") {
+      setData((data[licznik][8] = "Problem"));
+      setchangeData((data[licznik][8] = "Problem"));
+      console.log("Problem");
+    } else if (data[licznik][8] === "Problem") {
+      setData((data[licznik][8] = "OK"));
+      setchangeData((data[licznik][8] = "OK"));
+      console.log("OK");
     } else if (data[licznik][8] === undefined) {
-      setData((data[licznik][8] = "tak"));
-      setchangeData((data[licznik][8] = "tak"));
-      console.log("nie");
+      setData((data[licznik][8] = "OK"));
+      setchangeData((data[licznik][8] = "OK"));
+      console.log("Problem");
     }
 
     console.log(data[licznik]);
@@ -51,8 +51,8 @@ function Card(props) {
 
   const checkColor = () => {
     if (data[licznik][8] == null) setColor("white");
-    if (data[licznik][8] === "tak") setColor("green");
-    if (data[licznik][8] === "nie") setColor("red");
+    if (data[licznik][8] === "OK") setColor("green");
+    if (data[licznik][8] === "Problem") setColor("red");
   };
 
   useEffect(() => {

@@ -8,7 +8,7 @@ function App() {
   const [fileName, setfileName] = useState(null);
   const [sheetName, setSheetName] = useState([]);
   const [sheetData, setSheetData] = useState({});
-  const [finalData, setFinalData] = useState({});
+  const [finalData, setFinalData] = useState([]);
   const conData = [];
 
   const fileRef = useRef();
@@ -88,6 +88,15 @@ function App() {
     // console.log(obj);
   }
 
+  const handleExport = () => {
+    console.log(conData);
+    const wb = XLSX.utils.book_new(),
+      ws = XLSX.utils.aoa_to_sheet(conData);
+
+    XLSX.utils.book_append_sheet(wb, ws, "MySheet1");
+    XLSX.writeFile(wb, "MyExcel.xlsx");
+  };
+
   const handleRemove = () => {
     setFile(null);
     setfileName(null);
@@ -104,7 +113,12 @@ function App() {
         onChange={(e) => handleFile(e)}
         ref={fileRef}
       />
-      {fileName && <button onClick={handleRemove}>Delete</button>}
+      {fileName && (
+        <>
+          <button onClick={handleRemove}>Delete</button>
+          <button onClick={handleExport}>Export</button>
+        </>
+      )}
 
       {fileName && (
         <div>
